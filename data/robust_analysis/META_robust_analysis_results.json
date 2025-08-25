@@ -1,0 +1,916 @@
+{
+  "symbol": "META",
+  "data_period": {
+    "start_date": "2022-08-21T22:00:00",
+    "end_date": "2025-08-21T22:00:00",
+    "n_observations": 754
+  },
+  "basic_statistics": {
+    "avg_daily_return": 0.0024039816132738604,
+    "volatility": 0.4314423230379201,
+    "avg_overnight_gap": 0.0012592755501107298,
+    "avg_intraday_return": 0.0011542354128553384,
+    "recovery_rate": 0.8514588859416445,
+    "recovery_rate_ci": {
+      "statistic": 0.8514588859416445,
+      "ci_lower": 0.8289124668435013,
+      "ci_upper": 0.876657824933687
+    },
+    "recovery_details": {
+      "avg_recovery_magnitude": 2.06285831744584,
+      "median_recovery_magnitude": 1.6007590580883773,
+      "max_recovery": 28.76175548589341,
+      "recovery_gt_1pct": 70.40498442367601,
+      "recovery_gt_2pct": 38.62928348909657,
+      "recovery_gt_5pct": 4.517133956386292,
+      "recovery_magnitude_ci_lower": 1.8904850680466303,
+      "recovery_magnitude_ci_upper": 2.229167167053373
+    },
+    "non_recovery_details": {
+      "avg_non_recovery_gap": 0.9879863034094336,
+      "median_non_recovery_gap": 0.5544312336621965,
+      "max_non_recovery_gap": 21.044523185949775
+    }
+  },
+  "threshold_analysis": {
+    "68%": {
+      "n_breaches": 102.0,
+      "breach_frequency": 13.527851458885943,
+      "recovery_rate": 0.4215686274509804,
+      "non_recovery_rate": 0.5784313725490196,
+      "expected_accuracy": 0.31999999999999995,
+      "effectiveness": 0.2584313725490196,
+      "avg_breach_depth": 1.771792658623769,
+      "statistically_significant": "True"
+    },
+    "90%": {
+      "n_breaches": 38.0,
+      "breach_frequency": 5.039787798408488,
+      "recovery_rate": 0.18421052631578946,
+      "non_recovery_rate": 0.8157894736842105,
+      "expected_accuracy": 0.09999999999999998,
+      "effectiveness": 0.7157894736842105,
+      "avg_breach_depth": 2.0047687973834947,
+      "statistically_significant": "True"
+    },
+    "95%": {
+      "n_breaches": 25.0,
+      "breach_frequency": 3.3156498673740056,
+      "recovery_rate": 0.16,
+      "non_recovery_rate": 0.84,
+      "expected_accuracy": 0.050000000000000044,
+      "effectiveness": 0.7899999999999999,
+      "avg_breach_depth": 2.4619958194828397,
+      "statistically_significant": "True"
+    },
+    "99%": {
+      "n_breaches": 4.0,
+      "breach_frequency": 0.5305039787798408,
+      "recovery_rate": 0.0,
+      "non_recovery_rate": 1.0,
+      "expected_accuracy": 0.010000000000000009,
+      "effectiveness": 0.99,
+      "avg_breach_depth": 6.891606785521126,
+      "statistically_significant": "True"
+    }
+  },
+  "walk_forward_results": [
+    {
+      "train_start": "2022-08-21T22:00:00",
+      "train_end": "2023-08-21T22:00:00",
+      "test_start": "2023-08-22T22:00:00",
+      "test_end": "2023-09-20T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.8287449659998747,
+        "threshold_90": 3.713110788582495,
+        "threshold_95": 4.509417229110211,
+        "threshold_99": 6.875579659739742
+      },
+      "performance": {
+        "recovery_rate_68": 1.0,
+        "non_recovery_rate_68": 0.0,
+        "threshold_effectiveness_68": -0.31999999999999995,
+        "n_breaches_68": 7.0,
+        "recovery_rate_90": 1.0,
+        "non_recovery_rate_90": 0.0,
+        "threshold_effectiveness_90": -0.09999999999999998,
+        "n_breaches_90": 2.0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2022-09-20T22:00:00",
+      "train_end": "2023-09-20T22:00:00",
+      "test_start": "2023-09-21T22:00:00",
+      "test_end": "2023-10-19T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.7914955955018197,
+        "threshold_90": 3.3397803863766238,
+        "threshold_95": 4.421625362049686,
+        "threshold_99": 6.590602061785537
+      },
+      "performance": {
+        "recovery_rate_68": 0.8571428571428571,
+        "non_recovery_rate_68": 0.1428571428571429,
+        "threshold_effectiveness_68": -0.17714285714285705,
+        "n_breaches_68": 7.0,
+        "recovery_rate_90": 1.0,
+        "non_recovery_rate_90": 0.0,
+        "threshold_effectiveness_90": -0.09999999999999998,
+        "n_breaches_90": 2.0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2022-10-19T22:00:00",
+      "train_end": "2023-10-19T22:00:00",
+      "test_start": "2023-10-22T22:00:00",
+      "test_end": "2023-11-19T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.7629530615641698,
+        "threshold_90": 3.129747593902206,
+        "threshold_95": 4.171364008235045,
+        "threshold_99": 6.590602061785537
+      },
+      "performance": {
+        "recovery_rate_68": 0.6,
+        "non_recovery_rate_68": 0.4,
+        "threshold_effectiveness_68": 0.08000000000000007,
+        "n_breaches_68": 5.0,
+        "recovery_rate_90": 0.0,
+        "non_recovery_rate_90": 1.0,
+        "threshold_effectiveness_90": 0.9,
+        "n_breaches_90": 2.0,
+        "recovery_rate_95": 0.0,
+        "non_recovery_rate_95": 1.0,
+        "threshold_effectiveness_95": 0.95,
+        "n_breaches_95": 2.0,
+        "recovery_rate_99": 0.0,
+        "non_recovery_rate_99": 1.0,
+        "threshold_effectiveness_99": 0.99,
+        "n_breaches_99": 1.0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2022-11-17T22:00:00",
+      "train_end": "2023-11-19T22:00:00",
+      "test_start": "2023-11-20T22:00:00",
+      "test_end": "2023-12-19T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.6732829998749112,
+        "threshold_90": 2.707471300768932,
+        "threshold_95": 3.748564532583421,
+        "threshold_99": 5.418814380950015
+      },
+      "performance": {
+        "recovery_rate_68": 0.3333333333333333,
+        "non_recovery_rate_68": 0.6666666666666667,
+        "threshold_effectiveness_68": 0.3466666666666668,
+        "n_breaches_68": 6.0,
+        "recovery_rate_90": 0.3333333333333333,
+        "non_recovery_rate_90": 0.6666666666666667,
+        "threshold_effectiveness_90": 0.5666666666666668,
+        "n_breaches_90": 3.0,
+        "recovery_rate_95": 0.0,
+        "non_recovery_rate_95": 1.0,
+        "threshold_effectiveness_95": 0.95,
+        "n_breaches_95": 1.0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2022-12-19T22:00:00",
+      "train_end": "2023-12-19T22:00:00",
+      "test_start": "2023-12-20T22:00:00",
+      "test_end": "2024-01-22T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.6403886185204344,
+        "threshold_90": 2.6551762700227153,
+        "threshold_95": 3.7377074387765146,
+        "threshold_99": 4.515797747253204
+      },
+      "performance": {
+        "recovery_rate_68": 0.8,
+        "non_recovery_rate_68": 0.19999999999999996,
+        "threshold_effectiveness_68": -0.12,
+        "n_breaches_68": 5.0,
+        "recovery_rate_90": 0.0,
+        "non_recovery_rate_90": 1.0,
+        "threshold_effectiveness_90": 0.9,
+        "n_breaches_90": 1.0,
+        "recovery_rate_95": 0.0,
+        "non_recovery_rate_95": 1.0,
+        "threshold_effectiveness_95": 0.95,
+        "n_breaches_95": 1.0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-01-22T22:00:00",
+      "train_end": "2024-01-22T22:00:00",
+      "test_start": "2024-01-23T22:00:00",
+      "test_end": "2024-02-21T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.5984952374969768,
+        "threshold_90": 2.6551762700227153,
+        "threshold_95": 3.7377074387765146,
+        "threshold_99": 4.46182964467467
+      },
+      "performance": {
+        "recovery_rate_68": 0.0,
+        "non_recovery_rate_68": 1.0,
+        "threshold_effectiveness_68": 0.68,
+        "n_breaches_68": 5.0,
+        "recovery_rate_90": 0.0,
+        "non_recovery_rate_90": 1.0,
+        "threshold_effectiveness_90": 0.9,
+        "n_breaches_90": 4.0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-02-21T22:00:00",
+      "train_end": "2024-02-21T22:00:00",
+      "test_start": "2024-02-22T22:00:00",
+      "test_end": "2024-03-21T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.5439243479844582,
+        "threshold_90": 2.6118948633144674,
+        "threshold_95": 3.682096676573516,
+        "threshold_99": 4.374914936175953
+      },
+      "performance": {
+        "recovery_rate_68": 0.3333333333333333,
+        "non_recovery_rate_68": 0.6666666666666667,
+        "threshold_effectiveness_68": 0.3466666666666668,
+        "n_breaches_68": 6.0,
+        "recovery_rate_90": 0.0,
+        "non_recovery_rate_90": 1.0,
+        "threshold_effectiveness_90": 0.9,
+        "n_breaches_90": 2.0,
+        "recovery_rate_95": 0.0,
+        "non_recovery_rate_95": 1.0,
+        "threshold_effectiveness_95": 0.95,
+        "n_breaches_95": 1.0,
+        "recovery_rate_99": 0.0,
+        "non_recovery_rate_99": 1.0,
+        "threshold_effectiveness_99": 0.99,
+        "n_breaches_99": 1.0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-03-22T22:00:00",
+      "train_end": "2024-03-21T22:00:00",
+      "test_start": "2024-03-24T22:00:00",
+      "test_end": "2024-04-22T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.524846077880899,
+        "threshold_90": 2.654403315388323,
+        "threshold_95": 3.682096676573516,
+        "threshold_99": 4.374914936175953
+      },
+      "performance": {
+        "recovery_rate_68": 0.75,
+        "non_recovery_rate_68": 0.25,
+        "threshold_effectiveness_68": -0.06999999999999995,
+        "n_breaches_68": 12.0,
+        "recovery_rate_90": 1.0,
+        "non_recovery_rate_90": 0.0,
+        "threshold_effectiveness_90": -0.09999999999999998,
+        "n_breaches_90": 2.0,
+        "recovery_rate_95": 1.0,
+        "non_recovery_rate_95": 0.0,
+        "threshold_effectiveness_95": -0.050000000000000044,
+        "n_breaches_95": 1.0,
+        "recovery_rate_99": 1.0,
+        "non_recovery_rate_99": 0.0,
+        "threshold_effectiveness_99": -0.010000000000000009,
+        "n_breaches_99": 1.0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-04-23T22:00:00",
+      "train_end": "2024-04-22T22:00:00",
+      "test_start": "2024-04-23T22:00:00",
+      "test_end": "2024-05-21T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.569450520446838,
+        "threshold_90": 2.841699617323715,
+        "threshold_95": 3.7377074387765146,
+        "threshold_99": 4.782809557963763
+      },
+      "performance": {
+        "recovery_rate_68": 0.5,
+        "non_recovery_rate_68": 0.5,
+        "threshold_effectiveness_68": 0.18000000000000005,
+        "n_breaches_68": 8.0,
+        "recovery_rate_90": 0.0,
+        "non_recovery_rate_90": 1.0,
+        "threshold_effectiveness_90": 0.9,
+        "n_breaches_90": 2.0,
+        "recovery_rate_95": 0.0,
+        "non_recovery_rate_95": 1.0,
+        "threshold_effectiveness_95": 0.95,
+        "n_breaches_95": 1.0,
+        "recovery_rate_99": 0.0,
+        "non_recovery_rate_99": 1.0,
+        "threshold_effectiveness_99": 0.99,
+        "n_breaches_99": 1.0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-05-22T22:00:00",
+      "train_end": "2024-05-21T22:00:00",
+      "test_start": "2024-05-22T22:00:00",
+      "test_end": "2024-06-23T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.5758068916144397,
+        "threshold_90": 2.9485437711507605,
+        "threshold_95": 3.740002081901742,
+        "threshold_99": 5.550184496401949
+      },
+      "performance": {
+        "recovery_rate_68": 0.6,
+        "non_recovery_rate_68": 0.4,
+        "threshold_effectiveness_68": 0.08000000000000007,
+        "n_breaches_68": 5.0,
+        "recovery_rate_90": null,
+        "non_recovery_rate_90": null,
+        "threshold_effectiveness_90": null,
+        "n_breaches_90": 0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-06-22T22:00:00",
+      "train_end": "2024-06-23T22:00:00",
+      "test_start": "2024-06-24T22:00:00",
+      "test_end": "2024-07-23T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.5887945879186216,
+        "threshold_90": 2.9362744417976923,
+        "threshold_95": 3.740002081901742,
+        "threshold_99": 5.550184496401949
+      },
+      "performance": {
+        "recovery_rate_68": 0.625,
+        "non_recovery_rate_68": 0.375,
+        "threshold_effectiveness_68": 0.05500000000000005,
+        "n_breaches_68": 8.0,
+        "recovery_rate_90": 0.4,
+        "non_recovery_rate_90": 0.6,
+        "threshold_effectiveness_90": 0.5,
+        "n_breaches_90": 5.0,
+        "recovery_rate_95": 0.3333333333333333,
+        "non_recovery_rate_95": 0.6666666666666667,
+        "threshold_effectiveness_95": 0.6166666666666667,
+        "n_breaches_95": 3.0,
+        "recovery_rate_99": 0.0,
+        "non_recovery_rate_99": 1.0,
+        "threshold_effectiveness_99": 0.99,
+        "n_breaches_99": 2.0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-07-24T22:00:00",
+      "train_end": "2024-07-23T22:00:00",
+      "test_start": "2024-07-24T22:00:00",
+      "test_end": "2024-08-21T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.5996924146808613,
+        "threshold_90": 3.0179650013216803,
+        "threshold_95": 3.746665252591736,
+        "threshold_99": 6.087289199076936
+      },
+      "performance": {
+        "recovery_rate_68": 0.6666666666666666,
+        "non_recovery_rate_68": 0.33333333333333337,
+        "threshold_effectiveness_68": 0.01333333333333342,
+        "n_breaches_68": 6.0,
+        "recovery_rate_90": 0.6666666666666666,
+        "non_recovery_rate_90": 0.33333333333333337,
+        "threshold_effectiveness_90": 0.2333333333333334,
+        "n_breaches_90": 3.0,
+        "recovery_rate_95": 0.6666666666666666,
+        "non_recovery_rate_95": 0.33333333333333337,
+        "threshold_effectiveness_95": 0.2833333333333333,
+        "n_breaches_95": 3.0,
+        "recovery_rate_99": 0.0,
+        "non_recovery_rate_99": 1.0,
+        "threshold_effectiveness_99": 0.99,
+        "n_breaches_99": 1.0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-08-22T22:00:00",
+      "train_end": "2024-08-21T22:00:00",
+      "test_start": "2024-08-22T22:00:00",
+      "test_end": "2024-09-22T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.5706412538534829,
+        "threshold_90": 2.9485437711507605,
+        "threshold_95": 3.9841244112618024,
+        "threshold_99": 6.486120695850204
+      },
+      "performance": {
+        "recovery_rate_68": 0.8,
+        "non_recovery_rate_68": 0.19999999999999996,
+        "threshold_effectiveness_68": -0.12,
+        "n_breaches_68": 5.0,
+        "recovery_rate_90": 1.0,
+        "non_recovery_rate_90": 0.0,
+        "threshold_effectiveness_90": -0.09999999999999998,
+        "n_breaches_90": 1.0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-09-21T22:00:00",
+      "train_end": "2024-09-22T22:00:00",
+      "test_start": "2024-09-23T22:00:00",
+      "test_end": "2024-10-21T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.5395571379477169,
+        "threshold_90": 2.9362744417976923,
+        "threshold_95": 3.8817699436552076,
+        "threshold_99": 6.486120695850204
+      },
+      "performance": {
+        "recovery_rate_68": 0.8,
+        "non_recovery_rate_68": 0.19999999999999996,
+        "threshold_effectiveness_68": -0.12,
+        "n_breaches_68": 5.0,
+        "recovery_rate_90": null,
+        "non_recovery_rate_90": null,
+        "threshold_effectiveness_90": null,
+        "n_breaches_90": 0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-10-22T22:00:00",
+      "train_end": "2024-10-21T22:00:00",
+      "test_start": "2024-10-22T22:00:00",
+      "test_end": "2024-11-19T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.4478000538054678,
+        "threshold_90": 2.7926616833898144,
+        "threshold_95": 3.706316774073763,
+        "threshold_99": 6.486120695850204
+      },
+      "performance": {
+        "recovery_rate_68": 0.5714285714285714,
+        "non_recovery_rate_68": 0.4285714285714286,
+        "threshold_effectiveness_68": 0.10857142857142865,
+        "n_breaches_68": 7.0,
+        "recovery_rate_90": 0.5,
+        "non_recovery_rate_90": 0.5,
+        "threshold_effectiveness_90": 0.4,
+        "n_breaches_90": 4.0,
+        "recovery_rate_95": 0.0,
+        "non_recovery_rate_95": 1.0,
+        "threshold_effectiveness_95": 0.95,
+        "n_breaches_95": 2.0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-11-20T22:00:00",
+      "train_end": "2024-11-19T22:00:00",
+      "test_start": "2024-11-20T22:00:00",
+      "test_end": "2024-12-19T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.4678617205371345,
+        "threshold_90": 2.9362744417976923,
+        "threshold_95": 3.706316774073763,
+        "threshold_99": 6.087289199076936
+      },
+      "performance": {
+        "recovery_rate_68": 1.0,
+        "non_recovery_rate_68": 0.0,
+        "threshold_effectiveness_68": -0.31999999999999995,
+        "n_breaches_68": 7.0,
+        "recovery_rate_90": 1.0,
+        "non_recovery_rate_90": 0.0,
+        "threshold_effectiveness_90": -0.09999999999999998,
+        "n_breaches_90": 1.0,
+        "recovery_rate_95": 1.0,
+        "non_recovery_rate_95": 0.0,
+        "threshold_effectiveness_95": -0.050000000000000044,
+        "n_breaches_95": 1.0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2023-12-20T22:00:00",
+      "train_end": "2024-12-19T22:00:00",
+      "test_start": "2024-12-22T22:00:00",
+      "test_end": "2025-01-23T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.4871718397091553,
+        "threshold_90": 2.85257758935927,
+        "threshold_95": 3.660954680219671,
+        "threshold_99": 6.087289199076936
+      },
+      "performance": {
+        "recovery_rate_68": 0.2857142857142857,
+        "non_recovery_rate_68": 0.7142857142857143,
+        "threshold_effectiveness_68": 0.39428571428571435,
+        "n_breaches_68": 7.0,
+        "recovery_rate_90": 0.5,
+        "non_recovery_rate_90": 0.5,
+        "threshold_effectiveness_90": 0.4,
+        "n_breaches_90": 2.0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2024-01-23T22:00:00",
+      "train_end": "2025-01-23T22:00:00",
+      "test_start": "2025-01-26T22:00:00",
+      "test_end": "2025-02-24T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.507329291874102,
+        "threshold_90": 2.9067301146837443,
+        "threshold_95": 3.601446955868708,
+        "threshold_99": 6.087289199076936
+      },
+      "performance": {
+        "recovery_rate_68": 0.7142857142857143,
+        "non_recovery_rate_68": 0.2857142857142857,
+        "threshold_effectiveness_68": -0.03428571428571425,
+        "n_breaches_68": 7.0,
+        "recovery_rate_90": 0.6,
+        "non_recovery_rate_90": 0.4,
+        "threshold_effectiveness_90": 0.30000000000000004,
+        "n_breaches_90": 5.0,
+        "recovery_rate_95": 0.5,
+        "non_recovery_rate_95": 0.5,
+        "threshold_effectiveness_95": 0.44999999999999996,
+        "n_breaches_95": 2.0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2024-02-22T22:00:00",
+      "train_end": "2025-02-24T22:00:00",
+      "test_start": "2025-02-25T22:00:00",
+      "test_end": "2025-03-25T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.5664823537940875,
+        "threshold_90": 2.927025152586648,
+        "threshold_95": 3.8221631995105074,
+        "threshold_99": 6.087289199076936
+      },
+      "performance": {
+        "recovery_rate_68": 0.6363636363636364,
+        "non_recovery_rate_68": 0.36363636363636365,
+        "threshold_effectiveness_68": 0.043636363636363695,
+        "n_breaches_68": 11.0,
+        "recovery_rate_90": 0.42857142857142855,
+        "non_recovery_rate_90": 0.5714285714285714,
+        "threshold_effectiveness_90": 0.4714285714285714,
+        "n_breaches_90": 7.0,
+        "recovery_rate_95": 0.3333333333333333,
+        "non_recovery_rate_95": 0.6666666666666667,
+        "threshold_effectiveness_95": 0.6166666666666667,
+        "n_breaches_95": 6.0,
+        "recovery_rate_99": 0.0,
+        "non_recovery_rate_99": 1.0,
+        "threshold_effectiveness_99": 0.99,
+        "n_breaches_99": 1.0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2024-03-24T22:00:00",
+      "train_end": "2025-03-25T22:00:00",
+      "test_start": "2025-03-26T22:00:00",
+      "test_end": "2025-04-24T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.6111639913112683,
+        "threshold_90": 3.24091292194507,
+        "threshold_95": 4.393600284712304,
+        "threshold_99": 6.2302318479397645
+      },
+      "performance": {
+        "recovery_rate_68": 0.6,
+        "non_recovery_rate_68": 0.4,
+        "threshold_effectiveness_68": 0.08000000000000007,
+        "n_breaches_68": 15.0,
+        "recovery_rate_90": 0.25,
+        "non_recovery_rate_90": 0.75,
+        "threshold_effectiveness_90": 0.65,
+        "n_breaches_90": 8.0,
+        "recovery_rate_95": 0.16666666666666666,
+        "non_recovery_rate_95": 0.8333333333333334,
+        "threshold_effectiveness_95": 0.7833333333333333,
+        "n_breaches_95": 6.0,
+        "recovery_rate_99": 0.0,
+        "non_recovery_rate_99": 1.0,
+        "threshold_effectiveness_99": 0.99,
+        "n_breaches_99": 3.0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2024-04-23T22:00:00",
+      "train_end": "2025-04-24T22:00:00",
+      "test_start": "2025-04-27T22:00:00",
+      "test_end": "2025-05-26T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.6880339778398479,
+        "threshold_90": 3.719412773741466,
+        "threshold_95": 4.890488127053576,
+        "threshold_99": 8.123061615367352
+      },
+      "performance": {
+        "recovery_rate_68": 0.16666666666666666,
+        "non_recovery_rate_68": 0.8333333333333334,
+        "threshold_effectiveness_68": 0.5133333333333334,
+        "n_breaches_68": 6.0,
+        "recovery_rate_90": 0.0,
+        "non_recovery_rate_90": 1.0,
+        "threshold_effectiveness_90": 0.9,
+        "n_breaches_90": 1.0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2024-05-22T22:00:00",
+      "train_end": "2025-05-26T22:00:00",
+      "test_start": "2025-05-27T22:00:00",
+      "test_end": "2025-06-25T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.6666780146668352,
+        "threshold_90": 3.719412773741466,
+        "threshold_95": 4.825608604468169,
+        "threshold_99": 7.338047763481366
+      },
+      "performance": {
+        "recovery_rate_68": 1.0,
+        "non_recovery_rate_68": 0.0,
+        "threshold_effectiveness_68": -0.31999999999999995,
+        "n_breaches_68": 3.0,
+        "recovery_rate_90": null,
+        "non_recovery_rate_90": null,
+        "threshold_effectiveness_90": null,
+        "n_breaches_90": 0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    },
+    {
+      "train_start": "2024-06-24T22:00:00",
+      "train_end": "2025-06-25T22:00:00",
+      "test_start": "2025-06-26T22:00:00",
+      "test_end": "2025-07-27T22:00:00",
+      "thresholds": {
+        "threshold_68": 1.648742936074155,
+        "threshold_90": 3.719412773741466,
+        "threshold_95": 4.825608604468169,
+        "threshold_99": 7.338047763481366
+      },
+      "performance": {
+        "recovery_rate_68": 0.3333333333333333,
+        "non_recovery_rate_68": 0.6666666666666667,
+        "threshold_effectiveness_68": 0.3466666666666668,
+        "n_breaches_68": 3.0,
+        "recovery_rate_90": null,
+        "non_recovery_rate_90": null,
+        "threshold_effectiveness_90": null,
+        "n_breaches_90": 0,
+        "recovery_rate_95": null,
+        "non_recovery_rate_95": null,
+        "threshold_effectiveness_95": null,
+        "n_breaches_95": 0,
+        "recovery_rate_99": null,
+        "non_recovery_rate_99": null,
+        "threshold_effectiveness_99": null,
+        "n_breaches_99": 0
+      },
+      "n_train": 252,
+      "n_test": 21
+    }
+  ],
+  "monte_carlo_validation": {
+    "p_value": 0.0,
+    "p_value_corrected": 0.0,
+    "detailed_tests": {
+      "gap_prediction_test": {
+        "p_value": 0.0,
+        "test_statistic": 0.3723436536189949,
+        "null_mean": 0.001159746459964355,
+        "null_std": 0.03650824923059976,
+        "description": "Tests if overnight gap magnitude predicts recovery likelihood"
+      },
+      "sequence_information_test": {
+        "p_value": 1.0,
+        "test_statistic": 0.4473684210526316,
+        "null_mean": 0.8531842105263158,
+        "null_std": 0.03108511409423761,
+        "n_negative_gaps": 114.0,
+        "description": "Tests if sequence of market events contains exploitable information"
+      },
+      "market_regime_test": {
+        "p_value": 0.664,
+        "test_statistic": 0.7989130434782609,
+        "null_mean": 0.8136947464729526,
+        "null_std": 0.027811182805515595,
+        "n_high_vol_periods": 184.0,
+        "description": "Tests if market regimes make recoveries more predictable"
+      },
+      "overall_assessment": {
+        "min_p_value": 0.0,
+        "corrected_p_values": [
+          0.0,
+          1.0,
+          0.9960000000000001
+        ],
+        "any_significant": true,
+        "significant_tests": [
+          0
+        ]
+      }
+    },
+    "significant": true
+  },
+  "regime_analysis": {
+    "Low": {
+      "n_observations": 174.0,
+      "recovery_rate": 0.896551724137931,
+      "avg_overnight_gap": 0.0009699683665321352,
+      "avg_intraday_return": 0.001506679014963818
+    },
+    "Normal": {
+      "n_observations": 295.0,
+      "recovery_rate": 0.8576271186440678,
+      "avg_overnight_gap": 0.0015755128799869143,
+      "avg_intraday_return": 0.001652134399377952
+    },
+    "High": {
+      "n_observations": 245.0,
+      "recovery_rate": 0.8204081632653061,
+      "avg_overnight_gap": 0.0015807914220596223,
+      "avg_intraday_return": 0.000988310528332497
+    }
+  },
+  "data_quality": {
+    "missing_data_pct": 9.619529177718833,
+    "extreme_moves": 0.0,
+    "data_issues": []
+  },
+  "upside_threshold_analysis": {
+    "68%": {
+      "n_upside_breaches": 387.0,
+      "upside_breach_frequency": 51.326259946949605,
+      "expected_upside_frequency": 31.999999999999996,
+      "upside_effectiveness": 19.32625994694961,
+      "avg_upside_breach_magnitude": 1.702251538373692,
+      "statistically_significant": "True"
+    },
+    "90%": {
+      "n_upside_breaches": 387.0,
+      "upside_breach_frequency": 51.326259946949605,
+      "expected_upside_frequency": 9.999999999999998,
+      "upside_effectiveness": 41.326259946949605,
+      "avg_upside_breach_magnitude": 1.702251538373692,
+      "statistically_significant": "True"
+    },
+    "95%": {
+      "n_upside_breaches": 387.0,
+      "upside_breach_frequency": 51.326259946949605,
+      "expected_upside_frequency": 5.000000000000004,
+      "upside_effectiveness": 46.3262599469496,
+      "avg_upside_breach_magnitude": 1.702251538373692,
+      "statistically_significant": "True"
+    },
+    "99%": {
+      "n_upside_breaches": 387.0,
+      "upside_breach_frequency": 51.326259946949605,
+      "expected_upside_frequency": 1.0000000000000009,
+      "upside_effectiveness": 50.326259946949605,
+      "avg_upside_breach_magnitude": 1.702251538373692,
+      "statistically_significant": "True"
+    }
+  }
+}
