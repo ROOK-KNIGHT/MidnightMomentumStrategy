@@ -51,6 +51,8 @@ logs/
 config.json
 tokens.json
 credentials.json
+cs_tokens.json
+*_tokens.json
 
 # Large data files (keep structure but not all data)
 # Uncomment if you want to exclude large CSV files
