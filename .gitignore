@@ -58,6 +58,9 @@ cs_tokens.json
 # Uncomment if you want to exclude large CSV files
 # historical_data/*.csv
 
+# Proprietary execution scripts (keep local, exclude from repo)
+midnightMomentum_backtest.py
+
 # Temporary files
 *.tmp
 *.temp
